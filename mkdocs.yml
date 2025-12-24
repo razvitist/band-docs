@@ -1,4 +1,5 @@
 site_name: band.razvit # razvit.org
+site_url: https://razvitist.github.io/band-docs/
 theme:
   name: material
   logo: img/logo.svg
