@@ -1,0 +1,48 @@
+site_name: band.razvit # razvit.org
+theme:
+  name: material
+  logo: img/logo.svg
+  # icon:
+  #   logo: fontawesome/solid/fire
+  favicon: img/favicon.ico
+  palette:
+    scheme: slate
+    # primary: teal
+    primary: black
+    accent: deep orange
+  features:
+    - navigation.sections
+    - navigation.path
+extra_css:
+  - styles.css
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+plugins:
+  - search
+  - macros
+nav:
+  - 🔥 Band Razvit: index.md
+  - 🚀 Начало работы: getting-started.md
+  - 💾 Обновление прошивки: ota.md
+  - 🔗 Интеграции:
+      - 🌐 Сайты и приложения: integrations/websites.md
+      - 🧩 Расширение для браузера: integrations/extension.md
+      - 💻 Программа для компьютера: integrations/program.md
