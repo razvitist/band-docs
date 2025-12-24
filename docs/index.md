@@ -1,4 +1,4 @@
-![Logo](/img/long-mono.svg)
+![Logo](img/long-mono.svg)
 
 ## Браслет, который сделает тебя лучше
 
